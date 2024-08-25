@@ -1,12 +1,22 @@
 
-/* Your CSS Code here. */
 .holder {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
+/* Individual items */
 .item {
-	flex-basis: 20%; /* adjust the width of each item */
-	margin: 10px; /* add some margin for spacing */
+    flex: 1;
+    margin: 0 10px;
+    min-width: 150px; /* Adjust this based on your design needs */
+}
+
+/* Ensure first and last items touch the screen edges */
+.item:first-child {
+    margin-left: 0;
+}
+
+.item:last-child {
+    margin-right: 0;
 }
