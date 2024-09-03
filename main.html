@@ -5,9 +5,39 @@
 <head>
 	<link rel="stylesheet" href="styles.css">
 </head>
+	<style>
+	.holder {
+    display: flex;
+    justify-content: space-between;
+	background-color:red;
+    flex-wrap:wrap;
+}
+
+/* Individual items */
+.item item-1{
+    flex: 1;
+    margin: 0 10px;
+    min-width: 150px;
+	background-color:red;/* Adjust this based on your design needs */
+}
+
+/* Ensure first and last items touch the screen edges */
+.item item-2" {
+    margin-left: 0;
+}
+
+.item:last-child {
+    margin-right: 0;
+	</style>
 
 <body>
 	<!-- the entire body must be written by student -->
+	<div class="holder">
+    	<div class="item item-1">1</div>
+    	<div class="item item-2">2</div>
+    	<div class="item item-3">3</div>
+    	<div class="item item-4">4</div>
+   </div>
     <script type="text/javascript" src="./script.js">
 </script>
 
